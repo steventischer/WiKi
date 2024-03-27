@@ -1,4 +1,4 @@
-## Algemein
+## Allgemein
 
 ###
 
@@ -26,4 +26,20 @@ Datenbank Export/Import
 pg_dump -U USER_NAME DB_NAME > dbexport.pgsql
 psql -U USER_NAME DB_NAME < dbexport.pgsql
 
+```
+
+## Server
+
+###
+
+Listen IP
+
+```
+/etc/postgresql/15/main/postgresql.conf -> listen_addresses = '*'
+```
+
+Zugriff erlauben
+
+```
+/etc/postgresql/15/main/pg_hba.conf -> host    all             all             0.0.0.0/0 oder x.x.x.x/32       md5
 ```
