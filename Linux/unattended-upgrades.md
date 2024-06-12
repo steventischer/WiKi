@@ -24,7 +24,7 @@ apt-get install unattended-upgrades apt-listchanges -y
 ### Config
 ```bash
 > /etc/ssmtp/ssmtp.conf
-echo 'root:helpdesk-test@schauinsland-reisen.de:smtp.office365.com:587' >> /etc/ssmtp/revaliases
+echo 'root:dest-email@foo.bar:smtp.office365.com:587' >> /etc/ssmtp/revaliases
 ```
 
 ## Get next run
